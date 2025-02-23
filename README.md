@@ -2,18 +2,6 @@
 
 Generate color based on the given string.
 
-## Demo
-
-https://zenozeng.github.io/color-hash/demo/
-
-## Usage
-
-### Deno
-
-```typescript
-import ColorHash from "https://deno.land/x/color_hash@v2.0.0/mod.ts"
-```
-
 ### Node.js
 
 ```bash
@@ -21,20 +9,15 @@ npm install color-hash
 ```
 
 ```typescript
-import ColorHash from 'color-hash'
+import { ColorHash } from 'color-hash'
 ```
 
-or
-
-```javascript
-const ColorHash = require('color-hash').default;
-```
 
 ### <script type="module">
 
 ```html
 <script type="module">
-import ColorHash from '../dist/esm.js';
+import { ColorHash } from '../dist/esm.js';
 </script>
 ```
 

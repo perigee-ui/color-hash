@@ -1,0 +1,14 @@
+// https://www.npmjs.com/package/tsconfig-moon
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "incremental": true,
+      "composite": true,
+      "noEmit": true,
+      "declaration": true,
+      "declarationMap": true,
+      "emitDeclarationOnly": true,
+      "noEmitOnError": true,
+    }
+  }
+  

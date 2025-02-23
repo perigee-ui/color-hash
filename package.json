@@ -1,23 +1,36 @@
 {
-    "name": "color-hash",
-    "version": "2.0.2",
-    "description": "Generate color based on the given string (using HSL color space and SHA256).",
-    "main": "dist/color-hash.js",
-    "module": "dist/esm.js",
-    "scripts": {
-        "prepublishOnly": "make build",
-        "test": "node -e \"const ColorHash = require('.').default; new ColorHash();\""
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/zenozeng/color-hash.git"
-    },
-    "author": "Zeno Zeng",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/zenozeng/color-hash/issues"
-    },
-    "devDependencies": {
-        "typescript": "^4.2.4"
+  "name": "@perigee/color-hash",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Generate color based on the given string (using HSL color space and SHA256).",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perigee-ui/color-hash.git"
+  },
+  "author": "Zeno Zeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perigee-ui/color-hash/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "uuid": "^11.1.0",
+    "vitest": "^3.0.6"
+  },
+  "packageManager": "pnpm@10.4.1"
 }

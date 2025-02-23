@@ -1,0 +1,14 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "extends": "./tsconfig.options.json",
+  "include": ["env.d.ts", "src/**/*"],
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": [],
+    "lib": [
+      "ESNext"
+    ]
+  }
+}
