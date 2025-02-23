@@ -2,6 +2,11 @@
   "name": "@perigee/color-hash",
   "version": "0.1.0",
   "type": "module",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
   "description": "Generate color based on the given string (using HSL color space and SHA256).",
   "main": "dist/index.js",
   "module": "dist/index.js",
